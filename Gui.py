@@ -24,7 +24,6 @@ class Gui(Thread):
                 elif cmd[0] == "delete":
                     self.delete_window(cmd[1])
                 elif cmd[0] == "update":
-                    print('Received update command')
                     self.update_window(
                         cmd[1], cmd[2], cmd[3], cmd[4], ' '.join(cmd[5:]))
 
